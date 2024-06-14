@@ -1,0 +1,63 @@
+body{
+    background-color: #333;
+}
+
+.site-location{
+    border-radius: 30px;
+    width: 100%;
+}
+
+.wrapper{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.wrapper:hover > .card{
+    width: 100%;
+}
+.card{
+    cursor: pointer;
+    padding: 20px;
+    background-color: lightblue;
+    width: 100px;
+
+}
+.card:nth-child(1){
+    background-color: green;
+    transition: width 3s linear;
+}
+.card:nth-child(2){
+    background-color: green;
+    transition: width 3s ease;
+}
+.card:nth-child(3){
+    background-color: green;
+    transition: width 3s ease-in-out;
+}
+.card:nth-child(4){
+    background-color: green;
+    transition: width 3s ease-in;
+}
+.card:nth-child(5){
+    background-color: green;
+    transition: width 3s steps(10);
+}
+.card:nth-child(6){
+    background-color: blue;
+    transition: width 3s ease-out;
+}
+
+
+.site-title{
+    color: white;
+}
+.site-title::after{
+    content: "";
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-image: url("https://picsum.photos./id/22/100/100");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
